@@ -3,6 +3,7 @@ import { showInfoUser } from "./homeWork/taskOne";
 import { processSkills } from "./lessons/base-types/arrays";
 import { enumsProcess, action } from "./lessons/base-types/enums";
 import { logId } from "./lessons/advanced-types/unionTypes";
+import { UserClass } from "./lessons/classes/classTest";
 
 // console.log(userInfo("mamed", "mamedov"));
 // console.log(getFullInfo(user));
@@ -15,7 +16,13 @@ import { logId } from "./lessons/advanced-types/unionTypes";
 // const enumResult = enumsProcess();
 // action(enumResult.statusCode);
 
-logId("Two");
-logId(22);
-logId(!false);
-logId("Some Body Shrek");
+// logId("Two");
+// logId(22);
+// logId(!false);
+// logId("Some Body Shrek");
+
+const newUser = new UserClass("Petya");
+console.log(newUser.name);
+newUser.name = 'Vasya';
+console.log(newUser.name);
+
