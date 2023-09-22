@@ -7,5 +7,9 @@ export class UserClass {
 }
 
 export class Admin {
-    role: number;  
+  role: number;
+
+  constructor(role: number) {
+    this.role = role;
+  }
 }
