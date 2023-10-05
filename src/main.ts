@@ -3,10 +3,18 @@ import { showInfoUser } from "./homeWork/taskOne";
 import { processSkills } from "./lessons/base-types/arrays";
 import { enumsProcess, action } from "./lessons/base-types/enums";
 import { logId } from "./lessons/advanced-types/unionTypes";
-import { UserClass, Admin } from "./lessons/classes/classTest";
+import {
+  UserClass,
+  Admin,
+  Logger,
+  UserInter,
+} from "./lessons/classes/classTest";
 import { UserConst } from "./lessons/classes/consrtuctors";
 import { Payment } from "./lessons/classes/exampleMethdos";
 import { UserTest2 } from "./lessons/classes/getterSettertest";
+import { User, AdminEx } from "./lessons/classes/extends";
+
+//#region TestCode
 
 // console.log(userInfo("mamed", "mamedov"));
 // console.log(getFullInfo(user));
@@ -50,8 +58,12 @@ import { UserTest2 } from "./lessons/classes/getterSettertest";
 // const time = payment.getPaymentLifeTime();
 // console.log(time);
 
-const user5 = new UserTest2();
-user5.login = 'myLogin';
-console.log(user5);
-console.log(user5.login);
+// const user5 = new UserTest2();
+// user5.login = 'myLogin';
+// console.log(user5);
+// console.log(user5.login);
+
+//  new AdminEx();
+//#endregion
+
 
