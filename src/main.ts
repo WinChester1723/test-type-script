@@ -13,6 +13,13 @@ import { UserConst } from "./lessons/classes/consrtuctors";
 import { Payment } from "./lessons/classes/exampleMethdos";
 import { UserTest2 } from "./lessons/classes/getterSettertest";
 import { User, AdminEx } from "./lessons/classes/extends";
+import {
+  Cart,
+  Product,
+  Delivery,
+  HomeDelivery,
+  ShopDelivery,
+} from "./homeWork/cart";
 
 //#region TestCode
 
@@ -66,4 +73,12 @@ import { User, AdminEx } from "./lessons/classes/extends";
 //  new AdminEx();
 //#endregion
 
+const cart = new Cart();
+cart.addProdct(new Product(1, "cookie", 100));
+cart.addProdct(new Product(2, "cake", 300));
+cart.addProdct(new Product(3, "shocolate", 200));
 
+cart.deleteProdct(1);
+cart.setDelivery(new HomeDelivery(new Date(), "Yasamal"));
+console.log(cart.getSum());
+console.log(cart.checkOut());

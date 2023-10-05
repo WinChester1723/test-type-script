@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const extends_1 = require("./lessons/classes/extends");
+const cart_1 = require("./homeWork/cart");
+//#region TestCode
 // console.log(userInfo("mamed", "mamedov"));
 // console.log(getFullInfo(user));
 // showInfoUser("123", true, 1234567890, "email@example.com", "New York");
@@ -36,4 +37,13 @@ const extends_1 = require("./lessons/classes/extends");
 // user5.login = 'myLogin';
 // console.log(user5);
 // console.log(user5.login);
-new extends_1.AdminEx();
+//  new AdminEx();
+//#endregion
+const cart = new cart_1.Cart();
+cart.addProdct(new cart_1.Product(1, "cookie", 100));
+cart.addProdct(new cart_1.Product(2, "cake", 300));
+cart.addProdct(new cart_1.Product(3, "shocolate", 200));
+// cart.deleteProdct(1);
+// cart.setDelivery(new HomeDelivery(new Date(), "Yasamal"));
+console.log(cart.getSum());
+console.log(cart.checkOut());

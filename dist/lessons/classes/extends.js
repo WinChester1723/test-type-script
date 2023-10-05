@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AdminEx = exports.User = exports.PersistedPayment = void 0;
+exports.HttpError = exports.AdminEx = exports.User = exports.PersistedPayment = void 0;
 class PaymentEx {
     constructor(id) {
         this.status = "new";
@@ -37,3 +37,10 @@ class AdminEx extends User {
     }
 }
 exports.AdminEx = AdminEx;
+class HttpError extends Error {
+    constructor(message, code) {
+        super(message);
+        this.code = code !== null && code !== void 0 ? code : 500;
+    }
+}
+exports.HttpError = HttpError;
