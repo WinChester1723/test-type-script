@@ -20,6 +20,11 @@ import {
   HomeDelivery,
   ShopDelivery,
 } from "./homeWork/cart";
+import { PaymentThis } from "./lessons/classes/thisLes";
+import { UserController } from "./lessons/classes/abstractLes";
+import { LoggerRealization } from "./homeWork/abstractEx";
+import { MyLogger } from "./homeWork/abstractEx2";
+
 
 //#region TestCode
 
@@ -71,14 +76,30 @@ import {
 // console.log(user5.login);
 
 //  new AdminEx();
+
+// const cart = new Cart();
+// cart.addProdct(new Product(1, "cookie", 100));
+// cart.addProdct(new Product(2, "cake", 300));
+// cart.addProdct(new Product(3, "shocolate", 200));
+
+// cart.deleteProdct(1);
+// cart.setDelivery(new HomeDelivery(new Date(), "Yasamal"));
+// console.log(cart.getSum());
+// console.log(cart.checkOut());
+
+// const p = new PaymentThis();
+// console.log(p.getDate());   
+
+// const z = new UserController();
+// z.handleWithLogs('Somebody')
+
+// const x = new LoggerRealization();
+// x.longWithDate("Some");
+
+
+// const z = new MyLogger();
+// z.logWithDate("Test");
+
+
+
 //#endregion
-
-const cart = new Cart();
-cart.addProdct(new Product(1, "cookie", 100));
-cart.addProdct(new Product(2, "cake", 300));
-cart.addProdct(new Product(3, "shocolate", 200));
-
-cart.deleteProdct(1);
-cart.setDelivery(new HomeDelivery(new Date(), "Yasamal"));
-console.log(cart.getSum());
-console.log(cart.checkOut());

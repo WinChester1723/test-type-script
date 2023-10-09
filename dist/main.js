@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const cart_1 = require("./homeWork/cart");
+const abstractEx_1 = require("./homeWork/abstractEx");
+const abstractEx2_1 = require("./homeWork/abstractEx2");
 //#region TestCode
 // console.log(userInfo("mamed", "mamedov"));
 // console.log(getFullInfo(user));
@@ -38,12 +39,20 @@ const cart_1 = require("./homeWork/cart");
 // console.log(user5);
 // console.log(user5.login);
 //  new AdminEx();
-//#endregion
-const cart = new cart_1.Cart();
-cart.addProdct(new cart_1.Product(1, "cookie", 100));
-cart.addProdct(new cart_1.Product(2, "cake", 300));
-cart.addProdct(new cart_1.Product(3, "shocolate", 200));
+// const cart = new Cart();
+// cart.addProdct(new Product(1, "cookie", 100));
+// cart.addProdct(new Product(2, "cake", 300));
+// cart.addProdct(new Product(3, "shocolate", 200));
 // cart.deleteProdct(1);
 // cart.setDelivery(new HomeDelivery(new Date(), "Yasamal"));
-console.log(cart.getSum());
-console.log(cart.checkOut());
+// console.log(cart.getSum());
+// console.log(cart.checkOut());
+// const p = new PaymentThis();
+// console.log(p.getDate());   
+// const z = new UserController();
+// z.handleWithLogs('Somebody')
+//#endregion
+const x = new abstractEx_1.LoggerRealization();
+x.longWithDate("Some");
+const z = new abstractEx2_1.MyLogger();
+z.logWithDate("Test");
