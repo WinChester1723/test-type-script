@@ -1,3 +1,4 @@
+//#region Imports
 import { userInfo, user, getFullInfo } from "./lessons/base-types/app";
 import { showInfoUser } from "./homeWork/taskOne";
 import { processSkills } from "./lessons/base-types/arrays";
@@ -25,6 +26,9 @@ import { UserController } from "./lessons/classes/abstractLes";
 import { LoggerRealization } from "./homeWork/abstractEx";
 import { MyLogger } from "./homeWork/abstractEx2";
 
+
+
+//#endregion
 
 //#region TestCode
 
